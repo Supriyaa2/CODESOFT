@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --text: 1.5rem;
+}
+.hero-section {
+  min-height: 100vh;
+  background: url(https://images.unsplash.com/photo-1530789253388-582c481c54b0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+.navbar img {
+  width: 15%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 2rem 3rem;
+  color: antiquewhite;
+}
+.navbar ul {
+  list-style: none;
+}
+.navbar ul li {
+  display: inline-block;
+  margin-left: 3rem;
+  font-size: var(--text);
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: blueviolet;
+}
+.hero-text {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.session a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  text-align: center;
+  /* border: ; */
+}
+
+.session .btn {
+  /* For button */
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  margin: 14px 550px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content:inherit;
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+.column:nth-child(1)::after{
+  content:"Wedding";
+ 
+}
+.column:nth-child(2)::after{
+  content:"Portraits";
+ 
+}
+.column:nth-child(3)::after{
+  content:"Wildlife";
+ 
+}.column:nth-child(4)::after{
+  content:"Fashion";
+ 
+}
